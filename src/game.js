@@ -22,7 +22,7 @@ class Game{
 		if(this._board.playerBoard[rowIndex][columnIndex] === 'B'){
 			console.log("The game is over!");
 			this._board.print();
-		}else if(this._board.hasSafeTiles()){
+		}else if(!this._board.hasSafeTiles()){
 			console.log("Congratulations! You have won!");
 		}else{
 			console.log("Current Board:");
